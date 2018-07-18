@@ -15,7 +15,7 @@ public class SimpleEliza {
 
         String question;
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Hello! What's your deal? Enter a response below or enter Q to quit: ");
+        System.out.println("Hello! What's your problem? Enter a response or enter Q to quit: ");
         question = keyboard.nextLine();
 
         //System.out.println("Hello! What's your deal?: ");
@@ -23,11 +23,10 @@ public class SimpleEliza {
 
 
         //while ((!question.equalsIgnoreCase("q") || !question.equalsIgnoreCase("i am feeling great")))
-
-
         while ((!question.equalsIgnoreCase("q") && !question.equalsIgnoreCase("i am feeling great"))) {
-            System.out.println(question + "?");
-            question = keyboard.nextLine();
+            System.out.println("Enter a response or enter Q to quit: " + question);
+
+                    question = keyboard.nextLine();
 
 //            if (!question.equalsIgnoreCase("I am feeling great")) {
 //               System.out.println(question);
